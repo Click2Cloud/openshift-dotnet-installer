@@ -7,4 +7,5 @@ Building the project
 ----------------------
 
 Open a Visual Studio 2013 Command Prompt and run `build.bat` from the root of the repository.
-And run the `powershell -file package.ps1 package` to build the winnode installer.
+
+Then run the `powershell -file package.ps1 package` from command prompt to build the winnode installer.
