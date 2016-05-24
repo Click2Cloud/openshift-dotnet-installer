@@ -1,0 +1,7 @@
+@echo off
+
+set PATH=${rubyPath};%PATH%
+
+cd /D ${directory}
+
+${command}

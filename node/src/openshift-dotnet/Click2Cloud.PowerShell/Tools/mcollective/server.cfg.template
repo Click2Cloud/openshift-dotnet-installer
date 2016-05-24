@@ -1,0 +1,30 @@
+main_collective = mcollective
+collectives = mcollective
+libdir = /openshift/mcollective/plugins
+logfile = /openshift/mcollective/mcollective_server.log
+loglevel = debug
+daemonize = 0
+# Logger type should be 'console' when running from command line
+logger_type = file
+
+direct_addressing = 1
+
+# Plugins
+securityprovider = psk
+plugin.psk = $pskPlugin
+
+connector = activemq
+plugin.activemq.pool.size = 1
+plugin.activemq.pool.1.host = $activemqServer
+plugin.activemq.pool.1.port = $activemqPort
+plugin.activemq.pool.1.user = $activemqUser
+plugin.activemq.pool.1.password = $activemqPassword
+
+# Facts
+factsource = yaml
+plugin.yaml = /openshift/mcollective/etc/facts.yaml
+
+
+# Windows MCollective Agent Settings
+plugin.openshift.winbin = $binDir
+plugin.openshift.devlog = $devLogFile

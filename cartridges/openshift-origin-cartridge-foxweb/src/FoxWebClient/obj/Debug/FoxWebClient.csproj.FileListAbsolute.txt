@@ -1,0 +1,6 @@
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\Cartridges\FoxWeb\V1.0\foxweb\bin\FoxWebClient.exe.config
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\Cartridges\FoxWeb\V1.0\foxweb\bin\FoxWebClient.exe
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\Cartridges\FoxWeb\V1.0\foxweb\bin\FoxWebClient.pdb
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\Cartridges\FoxWeb\V1.0\foxweb\src\FoxWebClient\obj\Debug\FoxWebClient.csprojResolveAssemblyReference.cache
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\Cartridges\FoxWeb\V1.0\foxweb\src\FoxWebClient\obj\Debug\FoxWebClient.exe
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\Cartridges\FoxWeb\V1.0\foxweb\src\FoxWebClient\obj\Debug\FoxWebClient.pdb

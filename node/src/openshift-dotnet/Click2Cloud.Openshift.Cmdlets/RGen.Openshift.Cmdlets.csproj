@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{164C85D3-7F57-4937-9EEC-4C0A47C24745}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Click2Cloud.Openshift.Cmdlets</RootNamespace>
+    <AssemblyName>Click2Cloud.Openshift.Cmdlets</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\output\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>..\..\..\..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Automation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Management.Automation\v4.0_3.0.0.0__31bf3856ad364e35\System.Management.Automation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="YamlDotNet, Version=2.0.1.17304, Culture=neutral, PublicKeyToken=2b53052c5884d7a1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\YamlDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Properties\SharedAssemblyInfo.cs">
+      <Link>SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Cartridge_Repository_Action.cs" />
+    <Compile Include="Get_All_Gears_Endpoints_Action.cs" />
+    <Compile Include="Get_Gear_Envs_Action.cs" />
+    <Compile Include="Has_App_Cartridge_Action.cs" />
+    <Compile Include="Install_Cartridges.cs" />
+    <Compile Include="OO_Activate.cs" />
+    <Compile Include="OO_Admin_Cartridge.cs" />
+    <Compile Include="OO_Admin_Restore_Acls.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OO_Authorized_Ssh_Key_Batch_Add.cs" />
+    <Compile Include="OO_Authorized_Ssh_Key_Batch_Remove.cs" />
+    <Compile Include="OO_Force_Stop.cs" />
+    <Compile Include="OO_Env_Var_Add.cs" />
+    <Compile Include="OO_Authorized_Ssh_Keys_Replace.cs" />
+    <Compile Include="OO_Accept_Node.cs" />
+    <Compile Include="OO_Admin_Ctl_Gears.cs" />
+    <Compile Include="OO_Broker_Auth_Key_Add.cs" />
+    <Compile Include="OO_Broker_Auth_Key_Remove.cs" />
+    <Compile Include="OO_Conceal_Port.cs" />
+    <Compile Include="OO_Env_Var_Remove.cs" />
+    <Compile Include="OO_Expose_Port.cs" />
+    <Compile Include="OO_Deconfigure.cs" />
+    <Compile Include="OO_Authorized_Ssh_Key_Remove.cs" />
+    <Compile Include="OO_Get_Quota.cs" />
+    <Compile Include="OO_Idler_Stats.cs" />
+    <Compile Include="OO_Status.cs" />
+    <Compile Include="OO_Tidy.cs" />
+    <Compile Include="OO_Reload.cs" />
+    <Compile Include="OO_Connector_Execute.cs" />
+    <Compile Include="Gear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OO_App_Create.cs" />
+    <Compile Include="OO_App_Destroy.cs" />
+    <Compile Include="OO_App_State_Show.cs" />
+    <Compile Include="OO_Authorized_Ssh_Key_Add.cs" />
+    <Compile Include="OO_Cartridge_List.cs" />
+    <Compile Include="OO_Configure.cs" />
+    <Compile Include="OO_Post_Configure.cs" />
+    <Compile Include="OO_Restart.cs" />
+    <Compile Include="OO_Start.cs" />
+    <Compile Include="OO_Stop.cs" />
+    <Compile Include="OO_Unsubscribe.cs" />
+    <Compile Include="OO_User_Var_Add.cs" />
+    <Compile Include="OO_Update_Configuration.cs" />
+    <Compile Include="OO_User_Var_List.cs" />
+    <Compile Include="OO_User_Var_Remove.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReturnStatus.cs" />
+    <Compile Include="Set_District_Action.cs" />
+    <Compile Include="Set_District_Uid_Limits_Action.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Click2Cloud.Openshift.Common\Click2Cloud.Openshift.Common.csproj">
+      <Project>{d10a5a01-7a90-4c28-9c76-e2c5213592c9}</Project>
+      <Name>Click2Cloud.Openshift.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Click2Cloud.Openshift.Node\Click2Cloud.Openshift.Node.csproj">
+      <Project>{c69f8537-81e8-45df-846b-508da2ad1b0e}</Project>
+      <Name>Click2Cloud.Openshift.Node</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Click2Cloud.OpenShift.TrapUser\Click2Cloud.OpenShift.TrapUser.csproj">
+      <Project>{d3949f75-d14c-411d-b4dc-fe4f2783160b}</Project>
+      <Name>Click2Cloud.OpenShift.TrapUser</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Click2Cloud.Openshift.Utilities\Click2Cloud.Openshift.Utilities.csproj">
+      <Project>{38966805-0431-42d3-b5ff-51202dbcd5cd}</Project>
+      <Name>Click2Cloud.Openshift.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\windows-isolation\src\Click2Cloud.Prison\Click2Cloud.Prison.csproj">
+      <Project>{b9c02cb5-33ce-479a-9a16-78f67a66bf80}</Project>
+      <Name>Click2Cloud.Prison</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

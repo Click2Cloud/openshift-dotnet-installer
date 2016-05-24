@@ -1,0 +1,6 @@
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\RGenPrisonWithSQL2014\Drop1.2\Click2Cloud.Openshift.Net\cartridges\openshift-origin-cartridge-mssql\bin\control.exe.config
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\RGenPrisonWithSQL2014\Drop1.2\Click2Cloud.Openshift.Net\cartridges\openshift-origin-cartridge-mssql\bin\control.exe
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\RGenPrisonWithSQL2014\Drop1.2\Click2Cloud.Openshift.Net\cartridges\openshift-origin-cartridge-mssql\bin\control.pdb
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\RGenPrisonWithSQL2014\Drop1.2\Click2Cloud.Openshift.Net\cartridges\openshift-origin-cartridge-mssql\src\control\obj\Debug\Control.csprojResolveAssemblyReference.cache
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\RGenPrisonWithSQL2014\Drop1.2\Click2Cloud.Openshift.Net\cartridges\openshift-origin-cartridge-mssql\src\control\obj\Debug\control.exe
+E:\Shrutika M\Projects\OpenShift\TFSWorkSpace\RGenPrisonWithSQL2014\Drop1.2\Click2Cloud.Openshift.Net\cartridges\openshift-origin-cartridge-mssql\src\control\obj\Debug\control.pdb
