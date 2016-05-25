@@ -1,1 +1,0 @@
-C:\Srccode\openshift.net\node\src\openshift-dotnet\Click2Cloud.Openshift.Tests\obj\Debug\Click2Cloud.Openshift.Tests.csprojResolveAssemblyReference.cache

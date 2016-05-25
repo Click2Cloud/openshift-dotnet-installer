@@ -33,14 +33,14 @@ namespace Click2Cloud.Prison.Tests.Rules
             // Act
             string exe = Utilities.CreateExeForPrison(
          @"
-FtpWebRequest request = (FtpWebRequest)WebRequest.Create(""ftp://10.0.0.136/RGen/uploadtest.txt"");
+FtpWebRequest request = (FtpWebRequest)WebRequest.Create(""ftp://10.0.0.136/Click2Cloud/uploadtest.txt"");
 request.ConnectionGroupName = ""MyGroupName"";
 request.UseBinary = true;
 request.KeepAlive = true;
 request.Method = WebRequestMethods.Ftp.UploadFile;
 
 // This example assumes the FTP site uses anonymous logon.
-request.Credentials = new NetworkCredential(""jenkins"", ""RGenservice1234!"");
+request.Credentials = new NetworkCredential(""jenkins"", ""Click2Cloudservice1234!"");
 
 request.ContentLength = 1024 * 1024;
 
@@ -102,14 +102,14 @@ if ((1024 / timer.Elapsed.TotalSeconds) > 110)
             // Act
             string exe = Utilities.CreateExeForPrison(
          @"
-FtpWebRequest request = (FtpWebRequest)WebRequest.Create(""ftp://10.0.0.136/RGen/uploadtest.txt"");
+FtpWebRequest request = (FtpWebRequest)WebRequest.Create(""ftp://10.0.0.136/Click2Cloud/uploadtest.txt"");
 request.ConnectionGroupName = ""MyGroupName"";
 request.UseBinary = true;
 request.KeepAlive = true;
 request.Method = WebRequestMethods.Ftp.UploadFile;
 
 // This example assumes the FTP site uses anonymous logon.
-request.Credentials = new NetworkCredential(""jenkins"", ""RGenservice1234!"");
+request.Credentials = new NetworkCredential(""jenkins"", ""Click2Cloudservice1234!"");
 
 request.ContentLength = 1024 * 1024;
 
@@ -203,14 +203,14 @@ if (actualServer != null)
     actualServer.Stop();
 }
 
-FtpWebRequest request = (FtpWebRequest)WebRequest.Create(""ftp://10.0.0.136/RGen/uploadtest.txt"");
+FtpWebRequest request = (FtpWebRequest)WebRequest.Create(""ftp://10.0.0.136/click2cloud/uploadtest.txt"");
 request.ConnectionGroupName = ""MyGroupName"";
 request.UseBinary = true;
 request.KeepAlive = true;
 request.Method = WebRequestMethods.Ftp.UploadFile;
 
 // This example assumes the FTP site uses anonymous logon.
-request.Credentials = new NetworkCredential(""jenkins"", ""RGenservice1234!"");
+request.Credentials = new NetworkCredential(""jenkins"", ""click2cloudservice1234!"");
 
 request.ContentLength = 1024 * 1024;
 

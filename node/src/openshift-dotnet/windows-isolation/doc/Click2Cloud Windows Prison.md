@@ -1,4 +1,4 @@
-# RGen Windows Prison #
+# Click2Cloud Windows Prison #
 
 The goal for the Windows Prison is to be able to support a multi-tenant secure environment on Microsoft Windows Server.
 
@@ -12,7 +12,7 @@ Desktop versions of Windows have different default behavior when running process
 
 ### Use Case ###
 
-Standard Windows Server configurations do not have sufficient security capabilities to securely allow multi-tenant use. The RGen Windows Prison fills this gap in Windows Server functionality.
+Standard Windows Server configurations do not have sufficient security capabilities to securely allow multi-tenant use. The Click2Cloud Windows Prison fills this gap in Windows Server functionality.
 
 The Prison is meant for a clean Windows installation that is managed by automated software (such as a Platform as a Service) because there are system-wide policies and configurations that are assumed to be in place.
 
@@ -172,7 +172,7 @@ Disk quota can be enforced in more than one way on Windows:
 - File System Resource Management
 - Virtual Hard Disks (VHDs)
 
-The RGen Windows prison does not use VHDs for sandboxing because of the following:
+The Click2Cloud Windows prison does not use VHDs for sandboxing because of the following:
 
 - By creating and dedicating a VHD for a tenant, the tenant could not write on other file systems
 - Scalability and uncollected empty space from VHDs could be limiting factors

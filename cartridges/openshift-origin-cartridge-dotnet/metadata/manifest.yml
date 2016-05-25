@@ -1,4 +1,4 @@
-Name: dotnet
+﻿Name: dotnet
 Cartridge-Short-Name: DOTNET
 # This is used when creating environment variables:
 # OPENSHIFT_DOTNET_DIR
@@ -18,14 +18,14 @@ Version: '4.5'
 Versions: ['4.5']
 #  is the list of the versions of the software packaged by this cartridge.
 License: "??"
-License-Url: "http://www.Click2Cloud.com"
-Vendor: "RGen Software"
+License-Url: "http://www.click2cloud.net"
+Vendor: "Click2Cloud Inc"
 Platform: "Windows"
 Categories:
   - service
   - web_framework
   - windows
-Website: http://www.Click2Cloud.com/
+Website: http://www.click2cloud.net/
 Help-Topics:
   "Developer Center": "http://www.Click2Cloud.com/community/developers"
 Cart-Data:

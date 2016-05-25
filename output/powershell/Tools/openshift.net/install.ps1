@@ -142,8 +142,8 @@
     Note that the mssql cartridge manifest must be manually updated (C:\openshift\cartridges\mssql\metadata\manifest.yml).
 
 .NOTES
-    Author: RGen Solutions
-    Date:   November 05, 2014
+    Author: Click2Cloud Inc
+    Date:   December 01, 2015
 
 .EXAMPLE
 .\install.ps1 -mcollectivePskPlugin unset -publicHostname winnode-001.mycloud.com -brokerHost broker.mycloud.com -cloudDomain mycloud.com 
@@ -178,7 +178,7 @@ param (
     [string] $platformLogFile = $(if (-not $upgrade) { 'c:\openshift\log\platform.log' }),
     [ValidateSet('TRACE','DEBUG','WARNING','ERROR')]
     [string] $platformLogLevel = $(if (-not $upgrade) {  'DEBUG' }),
-    [string] $containerizationPlugin = $(if (-not $upgrade) {  'RGen-prison' }),
+    [string] $containerizationPlugin = $(if (-not $upgrade) {  'Click2Cloud-prison' }),
     # parameters used for ruby installation
     [string] $rubyDownloadLocation ='http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p448.exe?direct',
     [string] $rubyInstallLocation = $(if (-not $upgrade) { 'c:\openshift\ruby\' }),
@@ -271,7 +271,7 @@ Check-RunningProcesses
 Write-Host 'Installation logs will be written in c:\openshift\setup_logs'
 New-Item -path 'C:\openshift\setup_logs' -type directory -Force | out-Null
 
-# TODO: RGen: Using a hardcoded mcollective path - this is no longer necessary, we can setup mcollective using a dynamic path
+# TODO: Click2Cloud: Using a hardcoded mcollective path - this is no longer necessary, we can setup mcollective using a dynamic path
 $mcollectivePath = 'c:\openshift\mcollective\'
 
 

@@ -9,7 +9,7 @@ Cartridge-Version: '0.0.1'
 # is a version number identifying a release of your cartridge to OpenShift.
 Compatible-Versions: ['0.0.1']
 #  is a list of past cartridge versions that are compatible with this version. To be compatible with a previous version, the code changes you made in this version do not require the cartridge to be restarted or the application developer’s application to be restarted.
-Cartridge-Vendor: rgen
+Cartridge-Vendor: redhat
 #  is used to differentiate cartridges when installed in the system. As an individual, you should use the same unique value for all your cartridges to identify yourself; otherwise, use your company name.
 Display-Name: FoxWeb 4.6.3
 Description: "FoxWeb 4.6.3 Cartridge."
@@ -18,16 +18,16 @@ Version: '4.6.3'
 Versions: ['4.6.3']
 #  is the list of the versions of the software packaged by this cartridge.
 License: "??"
-License-Url: "http://www.Click2Cloud.com"
-Vendor: "RGen Software"
+License-Url: "http://www.click2cloud.net"
+Vendor: "Click 2 Cloud"
 Platform: "Windows"
 Categories:
   - service
   - web_framework
   - windows
-Website: http://www.Click2Cloud.com/
+Website: http://www.click2cloud.net/
 Help-Topics:
-  "Developer Center": "http://www.Click2Cloud.com/"
+  "Developer Center": "http://www.click2cloud.net/"
 Cart-Data:
 #describes information on how the environment variables should be used
   - Key: OPENSHIFT_FOXWEB_LOG_DIR
