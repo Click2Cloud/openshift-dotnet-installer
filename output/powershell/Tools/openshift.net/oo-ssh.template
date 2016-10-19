@@ -1,1 +1,0 @@
-/usr/bin/ssh -q -o 'BatchMode=yes' -o 'StrictHostKeyChecking=no' -i `$OPENSHIFT_APP_SSH_KEY "$@"
